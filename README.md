@@ -7,8 +7,9 @@
 ### 관련 Repository  
 1. [msa-sample-gateway](https://github.com/K-PaaS/msa-sample-gateway)  
 2. [msa-sample-ui](https://github.com/K-PaaS/msa-sample-ui)  
-3. [msa-sample-api](https://github.com/K-PaaS/msa-sample-api)  
-4. [msa-sample](https://github.com/K-PaaS/msa-sample)  
+3. [msa-sample-api](https://github.com/K-PaaS/msa-sample-api)
+4. [msa-sample-sd-api](https://github.com/K-PaaS/msa-sample-sd-api)  
+5. [msa-sample](https://github.com/K-PaaS/msa-sample)  
 
 
 <br>

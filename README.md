@@ -14,10 +14,10 @@
 <br>
 
 ### 구성도
-![image](https://github.com/K-PaaS/msa-sample-gateway/assets/67575226/d00a1598-3358-4cca-bd42-ce56e15c873a)
+![image](https://github.com/K-PaaS/msa-sample-gateway/assets/67575226/2541af60-7868-4ef5-9a74-6b7758227b10)
 
 
 <br>
 
 > 컨테이너플랫폼 파이프라인 서비스를 이용해 해당 샘플을 배포하는 방법은 아래 가이드를 참고 바랍니다.  
-[배포파이프라인 활용 가이드](https://github.com/K-PaaS/container-platform/blob/master/use-guide/pipeline/cp-pipeline-use-guide.md)
+[배포파이프라인 활용 가이드](https://github.com/K-PaaS/container-platform/blob/master/use-guide/pipeline/cp-pipeline-use-guide.md)`

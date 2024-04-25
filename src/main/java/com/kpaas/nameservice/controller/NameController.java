@@ -14,15 +14,10 @@ public class NameController {
     @Value("${config.data2}")
     private String data2;
 
-    @Value("${config.data3}")
-    private String data3;
-
-    @Value("${config.data4}")
-    private String data4;
-
     @GetMapping("/info")
     public ResultData getName() {
-        ResultData res = new ResultData(data1, data2, data3, data4);
+        ResultData res = new ResultData(data1, data2);
+        System.out.println("call to /info");
         return res;
     }
 }

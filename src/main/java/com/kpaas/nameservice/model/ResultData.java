@@ -6,15 +6,10 @@ public class ResultData {
 
    public String data1;
    public String data2;
-   public String data3;
 
-   public String data4;
-
-    public ResultData(String data1, String data2, String data3, String data4) {
+    public ResultData(String data1, String data2) {
         this.data1 = data1;
         this.data2 = data2;
-        this.data3 = data3;
-        this.data4 = data4;
     }
 
     public String getData1() {
@@ -31,21 +26,5 @@ public class ResultData {
 
     public void setData2(String data2) {
         this.data2 = data2;
-    }
-
-    public String getData3() {
-        return data3;
-    }
-
-    public void setData3(String data3) {
-        this.data3 = data3;
-    }
-
-    public String getData4() {
-        return data4;
-    }
-
-    public void setData4(String data4) {
-        this.data4 = data4;
     }
 }

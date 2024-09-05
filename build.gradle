@@ -2,18 +2,18 @@ plugins {
 	id 'java'
 	id 'org.springframework.boot' version '2.7.6'
 	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id "org.sonarqube" version "5.1.0.4882"
 }
 
 
 group = 'com.k-paas'
-version = '1.0'
 
 java {
 	sourceCompatibility = '1.8'
 }
 
 jar {
-	enabled = false
+	enabled = true
 }
 
 
@@ -34,4 +34,32 @@ dependencies {
 
 tasks.named('test') {
 	useJUnitPlatform()
+}
+
+task checkFilesExist {
+    doLast {
+        def directory = file('build/classes/java/main')
+        if (directory.exists() && directory.isDirectory()) {
+            def files = directory.listFiles()
+            if (files && files.length > 0) {
+                println "Files in ${directory} directory:"
+                files.each { file -> println file.name }
+            } else {
+                println "No files found in ${directory} directory."
+            }
+        } else {
+            println "${directory} does not exist or is not a directory."
+        }
+    }
+}
+
+build.dependsOn checkFilesExist
+
+sonarqube {
+    properties {
+        property "sonar.projectKey", "task_msa_api"
+        property "sonar.projectName", "task_msa_api"
+        property "sonar.projectVersion", "1.0"
+        property "sonar.java.binaries", "$buildDir/classes"
+    }
 }
